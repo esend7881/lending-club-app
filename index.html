@@ -105,7 +105,13 @@
         <h1>Lending Club Folio App</h1>
         <h2>A web service for automating note buying for lending club.</h2>
       </header>
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
 
+      <div id="status">
+      </div>
+      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+      </div>
       <hr>
 
       <section id="main_content">
@@ -143,13 +149,6 @@
       </script>
 
     </div>
-  </div>
-  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-  </fb:login-button>
-
-  <div id="status">
-  </div>
-  <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
   </div>
 </body>
 
