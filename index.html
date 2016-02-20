@@ -19,8 +19,8 @@
 <body>
   <script>
 	$(document).ready(function() {
-    var socket = io('//' + window.location.hostname + "/r.php");
-		$.get( "//relay.peakreacher.com/r.php", function( data ) {
+    		var socket = io('//relay.peakreacher.com');
+		$.get( "//relay.peakreacher.com", function( data ) {
 			alert(data);
 		});
 	});
